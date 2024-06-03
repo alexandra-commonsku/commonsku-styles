@@ -118,7 +118,7 @@ export default function Thermometer({
 
     const getProgressWidth = () => {
         if (target === 0) {
-            return 1;
+            return containerWidth;
         }
 
         const progress = Math.min(1, value / target);
